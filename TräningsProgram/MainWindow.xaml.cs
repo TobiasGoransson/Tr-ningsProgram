@@ -71,7 +71,9 @@ namespace TräningsProgram
 
         private void registerNewUserButton_Click(object sender, RoutedEventArgs e)
         {
-
+            RegisterNewUser registerNewUser = new RegisterNewUser();    
+            registerNewUser.Show();
+            this.Hide();
         }
     }
 }

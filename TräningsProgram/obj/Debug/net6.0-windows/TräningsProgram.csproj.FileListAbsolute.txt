@@ -47,3 +47,5 @@ C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-w
 C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-windows\RunWorkout.baml
 C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-windows\AddNewExercise.g.cs
 C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-windows\AddNewExercise.baml
+C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-windows\RegisterNewUser.g.cs
+C:\Users\tobia\source\repos\TräningsProgram\TräningsProgram\obj\Debug\net6.0-windows\RegisterNewUser.baml

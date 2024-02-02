@@ -19,6 +19,9 @@
     <Compile Update="Personalize_Program.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="RegisterNewUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="RunWorkout.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Personalize_Program.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RegisterNewUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RunWorkout.xaml">

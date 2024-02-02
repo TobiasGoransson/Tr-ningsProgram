@@ -268,5 +268,18 @@ namespace TräningsProgram
 
             connection.Close ();
         }
+        public void AddUser(string username, string password)
+        {
+            MySqlConnection connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            string query = "CALL Add_User ( \"" + username + "\", \"" + password + "\") ; ";
+            MySqlCommand command = new MySqlCommand(query, connection);
+            command.ExecuteNonQuery();
+
+            
+
+            connection.Close();
+        }
     }
 }

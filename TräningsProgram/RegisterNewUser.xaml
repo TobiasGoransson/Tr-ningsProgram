@@ -1,0 +1,51 @@
+﻿<Window x:Class="TräningsProgram.RegisterNewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TräningsProgram"
+        mc:Ignorable="d"
+        Title="RegisterNewUser" Height="450" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button FontFamily="Copperplate Gothic Bold" Grid.Column="1"  Grid.Row="2" x:Name="backToLogInButton" Content="Previous" Width="100" Height="20" HorizontalAlignment="Left" Click="backToLogInButton_Click"/>
+        <Button FontFamily="Copperplate Gothic Bold" Grid.Column="2"  Grid.Row="2" x:Name="saveUserButton" Content="Save User" Width="100" Height="20"  HorizontalAlignment="Right" Click="saveUserButton_Click" ></Button>
+        
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Left">
+            <TextBlock Margin ="10" Text="Register new User" FontFamily="Copperplate Gothic Bold" FontSize="20" HorizontalAlignment="Left"></TextBlock>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+
+            <TextBlock Margin="10 10 0 10" VerticalAlignment="Bottom" Height="20" FontFamily="Copperplate Gothic Bold" >User Name:</TextBlock>
+            <TextBlock Margin="10 10 0 10" VerticalAlignment="Bottom" Height="20" FontFamily="Copperplate Gothic Bold" >Password:</TextBlock>
+            <TextBlock Margin="10 10 0 10" VerticalAlignment="Bottom" Height="20" FontFamily="Copperplate Gothic Bold" >Verify Password:</TextBlock>
+
+        </StackPanel>
+        <Grid Grid.Column="2" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Margin="5 10 10 10" VerticalAlignment ="Top"  Height="20"  x:Name="registerUserNameTextBox"        />
+            <TextBox Grid.Row="1" Margin="5 10 10 10" VerticalAlignment ="Top"  Height="20"  x:Name="registerPasswordTextBox"          />
+            <TextBox Grid.Row="2" Margin="5 10 10 10" VerticalAlignment ="Top"  Height="20"  x:Name="registerVerifyPasswordTextBox"  />
+           
+        </Grid>
+
+    </Grid>
+    
+</Window>
