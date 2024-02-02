@@ -1,0 +1,40 @@
+﻿<Window x:Class="TräningsProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TräningsProgram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="70" />
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+            <TextBlock Margin ="10" Text="Personalise your training" FontFamily="Arial Rounded MT Bold" FontSize="20" HorizontalAlignment="Center"></TextBlock>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <TextBlock Margin="10 10 0 10" VerticalAlignment="Bottom">UserName:</TextBlock>
+            <TextBlock Margin="10 10 0 10" VerticalAlignment="Bottom">Password:</TextBlock>
+
+        </StackPanel>
+        <StackPanel Grid.Column="2" Grid.Row="1">
+            <TextBox Margin="5 10 10 10" x:Name="UserIdBox" VerticalAlignment="Top" />
+            <TextBox Margin="5 10 10 10" x:Name="PasswordTextBox" VerticalAlignment="Top" />
+            <Button Margin=" 10" x:Name="LogInButton" Width="150" HorizontalAlignment="Center" Click="LogInButton_Click">Log In</Button>
+            <Button Margin=" 10" x:Name="registerNewUserButton" Width="150" HorizontalAlignment="Center" Click="registerNewUserButton_Click">Register New User</Button>
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>

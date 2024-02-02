@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddNewExercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Choose_Program.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Edit_Exercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Personalize_Program.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="RunWorkout.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddNewExercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Choose_Program.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Edit_Exercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Personalize_Program.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="RunWorkout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

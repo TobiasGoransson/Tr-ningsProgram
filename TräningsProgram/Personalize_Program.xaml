@@ -1,0 +1,66 @@
+﻿<Window x:Class="TräningsProgram.Personalize_Program"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TräningsProgram"
+        mc:Ignorable="d"
+        Title="Personalize_Program" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <ListBox x:Name="exerciseListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="1" Grid.Row="2" />
+        <ScrollViewer Grid.Column="2" Grid.ColumnSpan="5" Grid.Row="2">
+            <Grid>
+                <ListBox x:Name="newExercisesListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,287,0"/>
+                <ListBox x:Name="durationListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="152,0,211,0"/>
+                <ListBox x:Name="RepsListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="228,0,135,0"/>
+                <ListBox x:Name="weightListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="304,0,59,0"/>
+                <ListBox x:Name="inclineListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="380,0,-17,0"/>
+            </Grid>
+        </ScrollViewer>
+        <ListBox x:Name="muscleGroupListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.Column="7" Grid.Row="2"/>
+        
+        <TextBlock Text="  Exersices" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <StackPanel Grid.Column="2" Grid.Row="1" VerticalAlignment="Bottom">
+            <TextBlock Text="Workout name"  FontWeight="Bold"/>
+            <TextBox x:Name="workoutNameTextBox" Height="25" Width="150 " HorizontalAlignment="Left" VerticalAlignment="Top" Text="New Workout"/>
+        </StackPanel>
+
+        <TextBlock Text="  Duration" Grid.Column="3" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <TextBlock Text="  Reps" Grid.Column="4" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <TextBlock Text="  Weight" Grid.Column="5" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <TextBlock Text="  Incline" Grid.Column="6" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+        <TextBlock Text="  Effected Muscel group" Grid.Column="7" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold"/>
+
+
+        <StackPanel Grid.Row="2" Grid.Column="3" Orientation="Horizontal" VerticalAlignment="Top"/>
+        <Button x:Name="AddnewExerciseButton" Grid.Column="1" Content="Add New Exercise" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="110" Click="AddnewExerciseButton_Click"/>
+        <Button x:Name="removeFromNewExercisesButton" Grid.Column="2" Grid.ColumnSpan="3" Content="Remove Exercise from Workout" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Center" Width="200" Click="removeFromNewExercisesButton_Click_1"/>
+        <Button x:Name="removeExerciseButton" Grid.Column="1" Content="Remove Exercise" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Center" Width="110" Click="removeExerciseButton_Click"/>
+        <Button x:Name="SaveButton" Grid.Column="7" Content="Save" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="110" Click="SaveButton_Click"/>
+        <Button x:Name="CancelButton" Grid.Column="7" Content="Cancel" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Center" Width="110" Click="CancelButton_Click"/>
+        <Button x:Name="AddexerciseTonewWorkoutButton" Grid.Column="2" Grid.ColumnSpan="3" Content="Add Exercise to Workout" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="200" Click="AddexerciseTonewWorkoutButton_Click"/>
+
+    </Grid>
+
+</Window>
